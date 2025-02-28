@@ -4,39 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netlify-App</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="w-11/12 mx-auto font-poppins">
-
+  <body class="font-poppins bg-[#F4F7FF]">
     <!-- navbar Section -->
-    <nav class="flex items-center justify-between bg-slate-400 p-4 rounded-2xl">
-       <!-- Left Section -->
+    <nav
+      class="w-11/12 mx-auto flex items-center justify-between bg-white p-4 rounded-2xl"
+    >
+      <!-- Left Section -->
       <div class="flex items-center space-x-2">
-          <img src="./assets/logo.png" alt="">
-          <span class="text-3xl text-gray-900">Dev<span class="font-bold">Board</span></span>
-        </div>
-    
+        <img src="./assets/logo.png" alt="" />
+        <span class="text-3xl text-gray-900"
+          >Dev<span class="font-bold">Board</span></span
+        >
+      </div>
+
       <!-- Right Section -->
       <div class="flex items-center space-x-9">
-        <div class="flex items-center space-x-3 bg-gray-100 px-4 py-2 rounded-full">
-          <img src="./assets/checkbox.png" alt="">
+        <div
+          class="flex items-center space-x-3 bg-gray-100 px-4 py-2 rounded-full"
+        >
+          <img src="./assets/checkbox.png" alt="" />
           <span class="text-black text-3xl font-bold">23</span>
         </div>
 
-        <div class="w-12 h-12 bg-gray-100 rounded-3xl m-4 flex items-center justify-center p-2">
-          <img src="./assets/theme-btn.png" alt="">
+        <div
+          class="w-12 h-12 bg-gray-100 rounded-3xl m-4 flex items-center justify-center p-2"
+        >
+          <img src="./assets/theme-btn.png" alt="" />
         </div>
       </div>
     </nav>
+
+    <div class=" bg-blue-50 pt-6">
     
+    <div class="w-11/12 mx-auto grid grid-cols-12 gap-9">
+      <!-- Left Sidebar -->
+      <div class="col-span-9">
+        <!-- Task Assigned Box -->
+        <div
+          class="bg-white p-5 rounded-xl shadow-md flex items-center space-x-4"
+        >
+          <div
+            class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-full"
+          >
+            <input
+              type="checkbox"
+              class="form-checkbox w-6 h-6 text-blue-600"
+              checked
+            />
+          </div>
+          <div>
+            <h3 class="text-gray-600">Task Assigned</h3>
+            <p class="text-3xl font-bold text-blue-700">05</p>
+          </div>
+        </div>
+
+        <!-- Task Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Fix Mobile Button Issue</h4>
+            <p class="text-sm text-gray-500">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Add Dark Mode</h4>
+            <p class="text-sm text-gray-500">
+              Store user preference in localStorage, update CSS...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-gray-300 text-gray-700 px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Optimize Home Page</h4>
+            <p class="text-sm text-gray-500">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+          <!-- More Tasks -->
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Fix Mobile Button Issue</h4>
+            <p class="text-sm text-gray-500">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Add Dark Mode</h4>
+            <p class="text-sm text-gray-500">
+              Store user preference in localStorage, update CSS...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-gray-300 text-gray-700 px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+          <!-- Task Card -->
+          <div class="bg-[#F4F7FF] p-6 rounded-2xl">
+            <h4 class="font-bold text-lg">Optimize Home Page</h4>
+            <p class="text-sm text-gray-500">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xs text-gray-400">Deadline: 21 March 2025</p>
+              <span
+                class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs"
+                >Completed</span
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-span-3 bg-white p-5 rounded-xl shadow-md">
+        <h3 class="font-bold text-lg">Activity Log</h3>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full mt-4">
+          Clear History
+        </button>
+        <div class="mt-4 space-y-2">
+          <p class="text-gray-600 text-sm bg-gray-100 p-2 rounded-lg">
+            You have completed the task Add Dark Mode at 12:48:15 PM
+          </p>
+          <p class="text-gray-600 text-sm bg-gray-100 p-2 rounded-lg">
+            You have completed the task Fix Mobile Button Issue at 12:48:15 PM
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
